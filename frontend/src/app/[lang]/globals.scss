@@ -134,3 +134,7 @@ body {
 .react-slideshow-container [aria-label="Next Slide"] {
   margin-right: 1rem;
 }
+
+.text-hero h1 {
+  @apply text-222 font-bold leading-[222px];
+} 

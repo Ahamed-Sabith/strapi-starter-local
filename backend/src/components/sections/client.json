@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_clients",
+  "info": {
+    "displayName": "Client",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "clientLogo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.media"
+    }
+  }
+}

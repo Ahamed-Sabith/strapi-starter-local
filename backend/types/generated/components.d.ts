@@ -158,9 +158,10 @@ export interface SectionsHero extends Schema.Component {
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    description: Attribute.String & Attribute.Required;
     picture: Attribute.Media<'images'> & Attribute.Required;
+    text: Attribute.String;
     buttons: Attribute.Component<'links.button-link', true>;
+    title1: Attribute.String;
   };
 }
 
@@ -209,6 +210,17 @@ export interface SectionsFeatureColumnsGroup extends Schema.Component {
   };
   attributes: {
     features: Attribute.Component<'elements.feature-column', true>;
+  };
+}
+
+export interface SectionsClient extends Schema.Component {
+  collectionName: 'components_sections_clients';
+  info: {
+    displayName: 'Client';
+    description: '';
+  };
+  attributes: {
+    clientLogo: Attribute.Component<'shared.media', true>;
   };
 }
 
@@ -494,6 +506,7 @@ declare module '@strapi/types' {
       'sections.features': SectionsFeatures;
       'sections.feature-rows-group': SectionsFeatureRowsGroup;
       'sections.feature-columns-group': SectionsFeatureColumnsGroup;
+      'sections.client': SectionsClient;
       'sections.bottom-actions': SectionsBottomActions;
       'meta.metadata': MetaMetadata;
       'links.social-link': LinksSocialLink;
