@@ -6,7 +6,9 @@
 body {
   @apply dark:bg-black
 }
-
+* {
+  font-family: 'Inter', sans-serif;
+}
 
 /******************************************* 
   Rich Text Styles
@@ -138,3 +140,34 @@ body {
 .text-hero h1 {
   @apply text-222 font-bold leading-[222px];
 } 
+.primary-btn {
+  padding: 12px 4px;
+  border: 4px solid  #d9f509;
+  border-radius: 55px;
+  
+}
+.primary-btn:hover{
+
+    box-shadow: 0 0 10px 0 #d9f509;
+  
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+  .text-hero h1 {
+    @apply text-[160px] font-bold leading-[222px];
+  } 
+}
+@media (max-width: 768px) {
+  .text-hero h1 {
+    @apply text-[110px] font-bold leading-[110px];
+  } 
+}
+@media (max-width: 680px) {
+  .text-hero h1 {
+    @apply text-[70px] font-bold leading-[75px];
+  } 
+}

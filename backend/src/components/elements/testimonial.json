@@ -8,21 +8,11 @@
   },
   "options": {},
   "attributes": {
-    "picture": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+    "testimonial": {
+      "type": "text"
     },
-    "text": {
-      "type": "text",
-      "required": true
-    },
-    "authorName": {
-      "type": "string",
-      "required": true
+    "author": {
+      "type": "string"
     }
   }
 }

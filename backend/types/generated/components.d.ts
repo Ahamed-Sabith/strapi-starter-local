@@ -72,7 +72,7 @@ export interface SharedMedia extends Schema.Component {
     description: '';
   };
   attributes: {
-    file: Attribute.Media<'images'>;
+    picture: Attribute.Media<'images'>;
   };
 }
 
@@ -80,14 +80,37 @@ export interface SectionsTestimonialsGroup extends Schema.Component {
   collectionName: 'components_slices_testimonials_groups';
   info: {
     name: 'TestimonialsGroup';
-    displayName: 'Testimonials group';
+    displayName: 'Testimonials';
     icon: 'user-friends';
     description: '';
   };
   attributes: {
-    title: Attribute.String;
-    description: Attribute.Text;
     testimonials: Attribute.Component<'elements.testimonial', true>;
+  };
+}
+
+export interface SectionsTechnology extends Schema.Component {
+  collectionName: 'components_sections_technologies';
+  info: {
+    displayName: 'Technology';
+    description: '';
+  };
+  attributes: {
+    heading: Attribute.Text;
+    logos: Attribute.Component<'shared.media', true>;
+    technologies: Attribute.Text;
+  };
+}
+
+export interface SectionsService extends Schema.Component {
+  collectionName: 'components_sections_services';
+  info: {
+    displayName: 'Service';
+    description: '';
+  };
+  attributes: {
+    services: Attribute.Component<'elements.service-text', true>;
+    buttons: Attribute.Component<'links.button-link'>;
   };
 }
 
@@ -100,6 +123,19 @@ export interface SectionsRichText extends Schema.Component {
   };
   attributes: {
     content: Attribute.RichText;
+  };
+}
+
+export interface SectionsProjects extends Schema.Component {
+  collectionName: 'components_sections_projects';
+  info: {
+    displayName: 'Project';
+    description: '';
+  };
+  attributes: {
+    heading: Attribute.String;
+    projects: Attribute.Component<'elements.projects', true>;
+    buttons: Attribute.Component<'links.button-link'>;
   };
 }
 
@@ -145,6 +181,17 @@ export interface SectionsLargeVideo extends Schema.Component {
     description: Attribute.String;
     video: Attribute.Media<'videos'> & Attribute.Required;
     poster: Attribute.Media<'images'>;
+  };
+}
+
+export interface SectionsImageTest extends Schema.Component {
+  collectionName: 'components_sections_image_tests';
+  info: {
+    displayName: 'Image test';
+  };
+  attributes: {
+    text: Attribute.String;
+    picture: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -213,6 +260,45 @@ export interface SectionsFeatureColumnsGroup extends Schema.Component {
   };
 }
 
+export interface SectionsDirectorSQuote extends Schema.Component {
+  collectionName: 'components_sections_director_s_quotes';
+  info: {
+    displayName: 'Directors quote';
+    description: '';
+  };
+  attributes: {
+    quote1: Attribute.Text;
+    quote2: Attribute.Text;
+    author: Attribute.String;
+    picture: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SectionsDirection extends Schema.Component {
+  collectionName: 'components_sections_directions';
+  info: {
+    displayName: 'Direction';
+  };
+  attributes: {
+    text1: Attribute.Text;
+    text2: Attribute.Text;
+    picture: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface SectionsContact extends Schema.Component {
+  collectionName: 'components_sections_contact_s';
+  info: {
+    displayName: 'Contact ';
+    description: '';
+  };
+  attributes: {
+    heading: Attribute.String;
+    buttons: Attribute.Component<'links.button-link', true>;
+    picture: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface SectionsClient extends Schema.Component {
   collectionName: 'components_sections_clients';
   info: {
@@ -220,7 +306,8 @@ export interface SectionsClient extends Schema.Component {
     description: '';
   };
   attributes: {
-    clientLogo: Attribute.Component<'shared.media', true>;
+    heading: Attribute.String;
+    picture: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
   };
 }
 
@@ -239,20 +326,6 @@ export interface SectionsBottomActions extends Schema.Component {
   };
 }
 
-export interface MetaMetadata extends Schema.Component {
-  collectionName: 'components_meta_metadata';
-  info: {
-    name: 'Metadata';
-    displayName: 'Metadata';
-    icon: 'robot';
-    description: '';
-  };
-  attributes: {
-    metaTitle: Attribute.String & Attribute.Required;
-    metaDescription: Attribute.Text & Attribute.Required;
-  };
-}
-
 export interface LinksSocialLink extends Schema.Component {
   collectionName: 'components_links_social_links';
   info: {
@@ -263,7 +336,17 @@ export interface LinksSocialLink extends Schema.Component {
     url: Attribute.String & Attribute.Required;
     newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
     text: Attribute.String & Attribute.Required;
-    social: Attribute.Enumeration<['YOUTUBE', 'TWITTER', 'DISCORD', 'WEBSITE']>;
+    social: Attribute.Enumeration<
+      [
+        'YOUTUBE',
+        'TWITTER',
+        'DISCORD',
+        'WEBSITE',
+        'FACEBOOK',
+        'INSTAGRAM',
+        'LINKEDIN'
+      ]
+    >;
   };
 }
 
@@ -309,6 +392,20 @@ export interface LinksButtonLink extends Schema.Component {
     newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
     text: Attribute.String;
     type: Attribute.Enumeration<['primary', 'secondary']>;
+  };
+}
+
+export interface MetaMetadata extends Schema.Component {
+  collectionName: 'components_meta_metadata';
+  info: {
+    name: 'Metadata';
+    displayName: 'Metadata';
+    icon: 'robot';
+    description: '';
+  };
+  attributes: {
+    metaTitle: Attribute.String & Attribute.Required;
+    metaDescription: Attribute.Text & Attribute.Required;
   };
 }
 
@@ -368,9 +465,34 @@ export interface ElementsTestimonial extends Schema.Component {
     description: '';
   };
   attributes: {
-    picture: Attribute.Media<'images'> & Attribute.Required;
-    text: Attribute.Text & Attribute.Required;
-    authorName: Attribute.String & Attribute.Required;
+    testimonial: Attribute.Text;
+    author: Attribute.String;
+  };
+}
+
+export interface ElementsServiceText extends Schema.Component {
+  collectionName: 'components_elements_service_texts';
+  info: {
+    displayName: 'Services';
+    description: '';
+  };
+  attributes: {
+    heading: Attribute.String;
+    paragraph: Attribute.Text;
+    picture: Attribute.Media<'images'>;
+  };
+}
+
+export interface ElementsProjects extends Schema.Component {
+  collectionName: 'components_elements_projects';
+  info: {
+    displayName: 'Projects';
+  };
+  attributes: {
+    picture: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    projectHeading: Attribute.String;
+    description: Attribute.Text;
+    tags: Attribute.String;
   };
 }
 
@@ -487,6 +609,16 @@ export interface ElementsFeatureColumn extends Schema.Component {
   };
 }
 
+export interface ElementsClientLogo extends Schema.Component {
+  collectionName: 'components_elements_client_logos';
+  info: {
+    displayName: 'Client logo';
+  };
+  attributes: {
+    picture: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -497,26 +629,35 @@ declare module '@strapi/types' {
       'shared.quote': SharedQuote;
       'shared.media': SharedMedia;
       'sections.testimonials-group': SectionsTestimonialsGroup;
+      'sections.technology': SectionsTechnology;
+      'sections.service': SectionsService;
       'sections.rich-text': SectionsRichText;
+      'sections.projects': SectionsProjects;
       'sections.pricing': SectionsPricing;
       'sections.lead-form': SectionsLeadForm;
       'sections.large-video': SectionsLargeVideo;
+      'sections.image-test': SectionsImageTest;
       'sections.hero': SectionsHero;
       'sections.heading': SectionsHeading;
       'sections.features': SectionsFeatures;
       'sections.feature-rows-group': SectionsFeatureRowsGroup;
       'sections.feature-columns-group': SectionsFeatureColumnsGroup;
+      'sections.director-s-quote': SectionsDirectorSQuote;
+      'sections.direction': SectionsDirection;
+      'sections.contact': SectionsContact;
       'sections.client': SectionsClient;
       'sections.bottom-actions': SectionsBottomActions;
-      'meta.metadata': MetaMetadata;
       'links.social-link': LinksSocialLink;
       'links.link': LinksLink;
       'links.button': LinksButton;
       'links.button-link': LinksButtonLink;
+      'meta.metadata': MetaMetadata;
       'layout.navbar': LayoutNavbar;
       'layout.logo': LayoutLogo;
       'layout.footer': LayoutFooter;
       'elements.testimonial': ElementsTestimonial;
+      'elements.service-text': ElementsServiceText;
+      'elements.projects': ElementsProjects;
       'elements.plan': ElementsPlan;
       'elements.notification-banner': ElementsNotificationBanner;
       'elements.logos': ElementsLogos;
@@ -524,6 +665,7 @@ declare module '@strapi/types' {
       'elements.feature': ElementsFeature;
       'elements.feature-row': ElementsFeatureRow;
       'elements.feature-column': ElementsFeatureColumn;
+      'elements.client-logo': ElementsClientLogo;
     }
   }
 }

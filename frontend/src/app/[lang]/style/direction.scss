@@ -1,0 +1,37 @@
+.arrow-container {
+  backdrop-filter: blur(5px);
+  background-color: #0000;
+  border: 3px solid #cdcdcd;
+  border-radius: 40px;
+  // margin-top: -178px;
+  padding: 550px 0;
+  position: relative;
+  width: 280px;
+}
+.background-img {
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .arrow-container {
+    width: 90px;
+    padding: 190px 0;
+    height: 330px;
+  }
+  .background-img {
+    height: 460px;
+  }
+}
+@media (max-width: 489px) {
+  .arrow-container {
+    width: 90px;
+    padding: 190px 0;
+    height: 330px;
+  }
+  .background-img {
+    height: 256px;
+  }
+}

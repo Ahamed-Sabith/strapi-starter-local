@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_sections_clients",
+  "collectionName": "components_elements_service_texts",
   "info": {
-    "displayName": "Client",
+    "displayName": "Services",
     "description": ""
   },
   "options": {},
@@ -9,15 +9,15 @@
     "heading": {
       "type": "string"
     },
+    "paragraph": {
+      "type": "text"
+    },
     "picture": {
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }

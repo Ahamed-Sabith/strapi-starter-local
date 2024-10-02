@@ -1,13 +1,15 @@
 {
-  "collectionName": "components_sections_clients",
+  "collectionName": "components_sections_directions",
   "info": {
-    "displayName": "Client",
-    "description": ""
+    "displayName": "Direction"
   },
   "options": {},
   "attributes": {
-    "heading": {
-      "type": "string"
+    "text1": {
+      "type": "text"
+    },
+    "text2": {
+      "type": "text"
     },
     "picture": {
       "allowedTypes": [
@@ -17,7 +19,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }

@@ -1,0 +1,15 @@
+.details-btn{
+    width: 57px;
+    border-radius: 31px;
+    padding: 12px;
+    position: absolute;
+    right: -57px;
+    height: 547px;
+    transition: right 0.8s ease, box-shadow 0.8s ease; 
+}
+.project-card:hover .details-btn{
+    box-shadow: -12px 0px 0px 36px #000000;
+    // transform: rotate(180deg);
+    right: 0;
+}
+

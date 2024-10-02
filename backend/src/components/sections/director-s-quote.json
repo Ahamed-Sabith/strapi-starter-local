@@ -1,12 +1,18 @@
 {
-  "collectionName": "components_sections_clients",
+  "collectionName": "components_sections_director_s_quotes",
   "info": {
-    "displayName": "Client",
+    "displayName": "Directors quote",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "heading": {
+    "quote1": {
+      "type": "text"
+    },
+    "quote2": {
+      "type": "text"
+    },
+    "author": {
       "type": "string"
     },
     "picture": {
@@ -17,7 +23,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }

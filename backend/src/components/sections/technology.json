@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_technologies",
+  "info": {
+    "displayName": "Technology",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "logos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.media"
+    },
+    "technologies": {
+      "type": "text"
+    }
+  }
+}

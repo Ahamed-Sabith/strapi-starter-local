@@ -23,9 +23,7 @@ const populate = {
       },
       testimonials: {
         populate: {
-          picture: {
-            fields: ["url", "alternativeText", "caption", "width", "height"],
-          },
+          fields: ["testimonial", "author"]
         },
       },
       plans: {
@@ -34,6 +32,29 @@ const populate = {
       submitButton: {
         populate: true,
       },
+      services: {
+        populate: {
+          fields: ["heading", "paragraph"],
+          picture: {
+            fields: ["url", "alternativeText", "caption", "width", "height"],
+          },
+        }
+      },
+      logos: {
+        populate: {
+          picture: {
+            fields: ["url", "alternativeText", "caption", "width", "height"],
+          },
+        }
+      },
+      projects: {
+        populate:{
+          picture: {
+            fields: ["url", "alternativeText", "caption", "width", "height"],
+          },
+          fields: ["projectHeading", "description", "tags"],
+        }
+      }
     },
   },
   seo: {

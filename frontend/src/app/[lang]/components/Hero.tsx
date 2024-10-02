@@ -44,7 +44,7 @@ export default function Hero({ data }: HeroProps) {
         backgroundPosition: "50% top",
       }}
     >
-      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12">
+      <div className="container flex flex-col justify-center md:p-3 md:mt-20  mx-auto sm:py-12 md:m-0 mt-16">
         <div className="flex flex-col justify-start p-6 rounded-lg">
           {/* <HighlightedText
             text={data.title}
@@ -54,7 +54,7 @@ export default function Hero({ data }: HeroProps) {
           /> */}
           {/* <h1 className="text-222">{data.title}</h1> */}
           <div className="text-hero mb-5">
-            <h1 className="text-green ">DESIGN</h1>
+            <h1 className="text-green md:text-[160px]">DESIGN</h1>
             <h1 className="text-secondary">DEVELOP</h1>
             <h1 className="text-secondary">MENT </h1>
             <h1 className="text-primary">AUGMENT</h1>
@@ -66,11 +66,11 @@ export default function Hero({ data }: HeroProps) {
             className="tmt-6 mb-8 text-lg sm:mb-12 text-end"
             color="dark:text-violet-400"
           /> */}
-          <div className="mb-10 flex justify-end">
-            <p className=" w-7/12 text-32 text-right font-semibold">{data.text}</p>
+          <div className="mb-10 flex lg:justify-end">
+            <p className=" lg:w-7/12 md:text-31 sm:text-13 lg:text-right font-bold">{data.text}</p>
           </div>
           <div className=" flex lg:justify-end justify-center">
-            <div className="px-2 py-4 border-4 border-green rounded-55 ">
+            <div className="primary-btn">
               {data.buttons.map((button: Button, index: number) => (
                 <Link
                   key={index}

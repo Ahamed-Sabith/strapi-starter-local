@@ -1,14 +1,10 @@
 {
-  "collectionName": "components_sections_clients",
+  "collectionName": "components_elements_client_logos",
   "info": {
-    "displayName": "Client",
-    "description": ""
+    "displayName": "Client logo"
   },
   "options": {},
   "attributes": {
-    "heading": {
-      "type": "string"
-    },
     "picture": {
       "allowedTypes": [
         "images",
@@ -17,7 +13,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }

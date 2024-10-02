@@ -9,8 +9,11 @@ module.exports = {
                 13: "13px",
                 15: "15px",
                 26: "26px",
+				31: "31px",
                 32: "32px",
+				36: "36px",
                 40: "40px",
+				48: "48px",
                 56: "56px",
 				222: "222px"
             },
@@ -20,7 +23,8 @@ module.exports = {
 			},
 			colors: {
 				green: '#D9F509',
-				grey: '#767676'
+				grey: '#767676',
+				greySecondary: "#6A6A6A"
 			},
 			borderRadius: {
 				55: '55px'

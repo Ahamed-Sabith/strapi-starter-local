@@ -1,12 +1,11 @@
 {
-  "collectionName": "components_sections_clients",
+  "collectionName": "components_sections_image_tests",
   "info": {
-    "displayName": "Client",
-    "description": ""
+    "displayName": "Image test"
   },
   "options": {},
   "attributes": {
-    "heading": {
+    "text": {
       "type": "string"
     },
     "picture": {
@@ -17,7 +16,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }

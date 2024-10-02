@@ -1,13 +1,18 @@
 {
-  "collectionName": "components_sections_clients",
+  "collectionName": "components_sections_contact_s",
   "info": {
-    "displayName": "Client",
+    "displayName": "Contact ",
     "description": ""
   },
   "options": {},
   "attributes": {
     "heading": {
       "type": "string"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.button-link"
     },
     "picture": {
       "allowedTypes": [
@@ -17,7 +22,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }
