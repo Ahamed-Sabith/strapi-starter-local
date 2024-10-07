@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_lists",
+  "info": {
+    "singularName": "project-list",
+    "pluralName": "project-lists",
+    "displayName": "Project List",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projectName": {
+      "type": "string"
+    },
+    "smallDescription": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "projectName"
+    }
+  }
+}

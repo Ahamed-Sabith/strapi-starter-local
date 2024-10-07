@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_hero_commons",
+  "info": {
+    "displayName": "Hero Common"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.button-link"
+    },
+    "picture": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

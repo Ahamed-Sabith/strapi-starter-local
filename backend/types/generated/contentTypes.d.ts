@@ -1063,7 +1063,9 @@ export interface ApiPagePage extends Schema.CollectionType {
         'sections.director-s-quote',
         'sections.technology',
         'sections.contact',
-        'sections.projects'
+        'sections.projects',
+        'sections.hero-common',
+        'sections.portfolio'
       ]
     > &
       Attribute.SetPluginOptions<{
@@ -1142,6 +1144,41 @@ export interface ApiProductFeatureProductFeature extends Schema.CollectionType {
   };
 }
 
+export interface ApiProjectListProjectList extends Schema.CollectionType {
+  collectionName: 'project_lists';
+  info: {
+    singularName: 'project-list';
+    pluralName: 'project-lists';
+    displayName: 'Project List';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    projectName: Attribute.String;
+    smallDescription: Attribute.Text;
+    tags: Attribute.String;
+    cover: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    slug: Attribute.UID<'api::project-list.project-list', 'projectName'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::project-list.project-list',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::project-list.project-list',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1167,6 +1204,7 @@ declare module '@strapi/types' {
       'api::lead-form-submission.lead-form-submission': ApiLeadFormSubmissionLeadFormSubmission;
       'api::page.page': ApiPagePage;
       'api::product-feature.product-feature': ApiProductFeatureProductFeature;
+      'api::project-list.project-list': ApiProjectListProjectList;
     }
   }
 }

@@ -1,24 +1,11 @@
+"use client";
 import Image from "next/image";
 import pic from "../assets/FMP.png";
 import "../style/project.scss";
+import { useState, useEffect, useCallback } from "react";
+import { fetchAPI } from "../utils/fetch-api";
+import Project from "../project-list/project-list"
 
-interface Projects {
-  id: number;
-  projectHeading: string;
-  description: string;
-  tags: string;
-  picture: {
-    data: {
-      id: string;
-      attributes: {
-        url: string;
-        alternativeText: string;
-        width: number;
-        height: number;
-      };
-    };
-  };
-}
 interface Button {
   id: string;
   url: string;
@@ -28,28 +15,53 @@ interface Button {
 }
 
 interface ProjectProps {
-  data: {
+  data1: {
     id: number;
     heading: string;
     buttons: Button;
-    projects: Projects[];
+
   };
 }
 
-export default function Projects({ data }: ProjectProps) {
+export default function Projects({ data1 }: ProjectProps) {
+  const [data, setData] = useState<any>([]);
+  const [isLoading, setLoading] = useState(true);
+
+  const fetchData = useCallback(async (start: number, limit: number) => {
+      setLoading(true);
+      try {
+          const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;
+          const path = `/project-lists`;
+          const urlParamsObject = {
+              sort: { createdAt: "desc" },
+              populate: {
+                  cover: { fields: ["url"] },
+                  test: { populate: "*" }, 
+              },
+          };
+          const options = { headers: { Authorization: `Bearer ${token}` } };
+          const responseData = await fetchAPI(path, urlParamsObject, options);
+          console.log('responseData', responseData.data);
+          setData(responseData.data);
+
+      } catch (error) {
+          console.error(error);
+      } finally {
+          setLoading(false);
+      }
+  }, []);
+
+  useEffect(() => {
+      fetchData(0, Number(process.env.NEXT_PUBLIC_PAGE_LIMIT));
+  }, [fetchData]);
+
 
   return (
     <>
       <div className="mb-10">
-        <h2 className="text-[64px] font-bold mx-12 pb-2">{data.heading}</h2>
-        <div className="project-card mx-5 flex relative overflow-hidden">
-          <div className="pic-card">
-            <Image src={pic} alt="" />
-          </div>
-          <div className="details-btn bg-green text-black flex items-center ms-4 ">
-            FMP
-          </div>
-        </div>
+        <h2 className="text-[64px] font-bold mx-12 pb-2">Recent Work</h2>
+        
+        <Project data={data}/>
       </div>
     </>
   );

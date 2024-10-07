@@ -36,7 +36,9 @@
         "sections.director-s-quote",
         "sections.technology",
         "sections.contact",
-        "sections.projects"
+        "sections.projects",
+        "sections.hero-common",
+        "sections.portfolio"
       ],
       "pluginOptions": {
         "i18n": {

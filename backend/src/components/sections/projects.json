@@ -9,11 +9,6 @@
     "heading": {
       "type": "string"
     },
-    "projects": {
-      "type": "component",
-      "repeatable": true,
-      "component": "elements.projects"
-    },
     "buttons": {
       "type": "component",
       "repeatable": false,
