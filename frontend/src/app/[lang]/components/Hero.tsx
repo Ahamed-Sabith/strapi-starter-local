@@ -38,14 +38,14 @@ export default function Hero({ data }: HeroProps) {
 
   return (
     <section
-      className="container  dark:bg-black dark:text-gray-100 bg-no-repeat bg-cover overflow-hidden"
+      className="container  dark:bg-black dark:text-gray-100 bg-no-repeat bg-cover overflow-hidden pb-20"
       style={{
         backgroundImage: `url(${imgUrl || ""})`,
         backgroundPosition: "50% top",
       }}
     >
       <div className="container flex flex-col justify-center md:p-3 md:mt-20  mx-auto sm:py-12 md:m-0 mt-16">
-        <div className="flex flex-col justify-start p-6 rounded-lg">
+        <div className="flex flex-col justify-start px-6 py-20 rounded-lg">
           {/* <HighlightedText
             text={data.title}
             tag="h1"
@@ -53,7 +53,7 @@ export default function Hero({ data }: HeroProps) {
             color="dark:text-violet-400"
           /> */}
           {/* <h1 className="text-222">{data.title}</h1> */}
-          <div className="text-hero mb-5">
+          <div className="text-hero mb-16">
             <h1 className="text-green md:text-[160px]">DESIGN</h1>
             <h1 className="text-secondary">DEVELOP</h1>
             <h1 className="text-secondary">MENT </h1>

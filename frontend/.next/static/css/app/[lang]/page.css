@@ -1,0 +1,118 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/app/[lang]/style/project.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.details-btn {
+  border-radius: 31px;
+  padding: 12px 20px;
+  position: absolute;
+  right: -57px;
+  height: 553px;
+  transition: right 0.8s ease, box-shadow 0.8s ease;
+}
+
+.project-card:hover .details-btn {
+  box-shadow: -12px 0px 0px 36px #000000;
+  right: 0;
+}
+
+.description-card {
+  border-radius: 30px;
+  padding: 30px;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/app/[lang]/style/quote.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.background-blur {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.container-quote:hover .img-bg {
+  transform: scale(1.35);
+}
+
+.container-quote {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  transition: transform 5s ease;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/app/[lang]/style/direction.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.arrow-container {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #cdcdcd;
+  border-radius: 40px;
+  padding: 550px 0;
+  position: relative;
+  width: 280px;
+}
+
+.background-img {
+  background-position: top, bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 100%;
+}
+
+@media (max-width: 1025px) {
+  .arrow-container {
+    height: 300px;
+    width: 200px;
+    padding: 420px 0;
+    margin-right: 20px;
+  }
+  .background-img {
+    height: 614px;
+  }
+  .arrow-icon {
+    margin-left: 4px;
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .arrow-container {
+    width: 140px;
+    padding: 280px 0;
+    height: 330px;
+  }
+  .background-img {
+    height: 460px;
+  }
+  .arrow-icon {
+    height: 100px;
+    width: 100px;
+    margin-left: 8px;
+  }
+}
+@media (max-width: 489px) {
+  .arrow-container {
+    width: 90px;
+    padding: 190px 0;
+    height: 330px;
+  }
+  .background-img {
+    height: 256px;
+  }
+  .arrow-icon {
+    height: 60px;
+    width: 60px;
+    margin-left: 3px;
+  }
+}

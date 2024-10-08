@@ -26,8 +26,12 @@ async function getPostBySlug(slug: string) {
     };
     const options = { headers: { Authorization: `Bearer ${token}` } };
     const response = await fetchAPI(path, urlParamsObject, options);
+    // console.log(response);
+
     return response;
+    
 }
+
 
 async function getMetaData(slug: string) {
     const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;

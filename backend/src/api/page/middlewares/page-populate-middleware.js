@@ -10,6 +10,11 @@ const populate = {
       picture: {
         fields: ["url", "alternativeText", "caption", "width", "height"],
       },
+      media: {
+        picture: {
+          fields: ["url", "alternativeText", "caption", "width", "height"],
+        },
+      },
       buttons: {
         populate: true,
       },
@@ -49,10 +54,7 @@ const populate = {
       },
       projects: {
         populate:{
-          picture: {
-            fields: ["url", "alternativeText", "caption", "width", "height"],
-          },
-          fields: ["projectHeading", "description", "tags"],
+          fields: ["heading"],
         }
       }
     },

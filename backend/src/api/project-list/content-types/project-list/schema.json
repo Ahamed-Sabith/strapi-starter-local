@@ -35,6 +35,19 @@
     "slug": {
       "type": "uid",
       "targetField": "projectName"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-details"
+    },
+    "richText": {
+      "type": "richtext"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.button-link"
     }
   }
 }

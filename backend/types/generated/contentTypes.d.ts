@@ -1161,6 +1161,9 @@ export interface ApiProjectListProjectList extends Schema.CollectionType {
     tags: Attribute.String;
     cover: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     slug: Attribute.UID<'api::project-list.project-list', 'projectName'>;
+    hero: Attribute.Component<'sections.hero-details'>;
+    richText: Attribute.RichText;
+    button: Attribute.Component<'links.button-link'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_app_lang_components_Logo_tsx";
+exports.ids = ["_rsc_src_app_lang_components_Logo_tsx"];
+exports.modules = {
+
+/***/ "(rsc)/./src/app/[lang]/components/Logo.tsx":
+/*!********************************************!*\
+  !*** ./src/app/[lang]/components/Logo.tsx ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Logo)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ \"(rsc)/./node_modules/next/dist/api/link.js\");\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/image */ \"(rsc)/./node_modules/next/dist/api/image.js\");\n\n\n\nfunction Logo({ src, children }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(next_link__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n        href: \"/\",\n        \"aria-label\": \"Back to homepage\",\n        className: \"flex items-center p-2\",\n        children: [\n            src && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(next_image__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n                src: src,\n                alt: \"logo\",\n                width: 45,\n                height: 45\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\Admin\\\\Documents\\\\GitHub\\\\strapi-starter-local\\\\frontend\\\\src\\\\app\\\\[lang]\\\\components\\\\Logo.tsx\",\n                lineNumber: 17,\n                columnNumber: 15\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"ml-2\",\n                children: children\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\Admin\\\\Documents\\\\GitHub\\\\strapi-starter-local\\\\frontend\\\\src\\\\app\\\\[lang]\\\\components\\\\Logo.tsx\",\n                lineNumber: 18,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\Admin\\\\Documents\\\\GitHub\\\\strapi-starter-local\\\\frontend\\\\src\\\\app\\\\[lang]\\\\components\\\\Logo.tsx\",\n        lineNumber: 12,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL1tsYW5nXS9jb21wb25lbnRzL0xvZ28udHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUE2QjtBQUNFO0FBRWhCLFNBQVNFLEtBQUssRUFDM0JDLEdBQUcsRUFDSEMsUUFBUSxFQUlUO0lBQ0MscUJBQ0UsOERBQUNKLGlEQUFJQTtRQUNISyxNQUFLO1FBQ0xDLGNBQVc7UUFDWEMsV0FBVTs7WUFFVEoscUJBQU8sOERBQUNGLGtEQUFLQTtnQkFBQ0UsS0FBS0E7Z0JBQUtLLEtBQUk7Z0JBQU9DLE9BQU87Z0JBQUlDLFFBQVE7Ozs7OzswQkFDdkQsOERBQUNDO2dCQUFJSixXQUFVOzBCQUFRSDs7Ozs7Ozs7Ozs7O0FBRzdCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZnJvbnRlbmQvLi9zcmMvYXBwL1tsYW5nXS9jb21wb25lbnRzL0xvZ28udHN4P2Y5ZjAiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvbGlua1wiO1xyXG5pbXBvcnQgSW1hZ2UgZnJvbSBcIm5leHQvaW1hZ2VcIjtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExvZ28oe1xyXG4gIHNyYyxcclxuICBjaGlsZHJlbixcclxufToge1xyXG4gIHNyYzogc3RyaW5nIHwgbnVsbDtcclxuICBjaGlsZHJlbj86IFJlYWN0LlJlYWN0Tm9kZTtcclxufSkge1xyXG4gIHJldHVybiAoXHJcbiAgICA8TGlua1xyXG4gICAgICBocmVmPVwiL1wiXHJcbiAgICAgIGFyaWEtbGFiZWw9XCJCYWNrIHRvIGhvbWVwYWdlXCJcclxuICAgICAgY2xhc3NOYW1lPVwiZmxleCBpdGVtcy1jZW50ZXIgcC0yXCJcclxuICAgID5cclxuICAgICAge3NyYyAmJiA8SW1hZ2Ugc3JjPXtzcmN9IGFsdD1cImxvZ29cIiB3aWR0aD17NDV9IGhlaWdodD17NDV9IC8+fVxyXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1sLTJcIj57Y2hpbGRyZW59PC9kaXY+XHJcbiAgICA8L0xpbms+XHJcbiAgKTtcclxufVxyXG4iXSwibmFtZXMiOlsiTGluayIsIkltYWdlIiwiTG9nbyIsInNyYyIsImNoaWxkcmVuIiwiaHJlZiIsImFyaWEtbGFiZWwiLCJjbGFzc05hbWUiLCJhbHQiLCJ3aWR0aCIsImhlaWdodCIsImRpdiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./src/app/[lang]/components/Logo.tsx\n");
+
+/***/ })
+
+};
+;

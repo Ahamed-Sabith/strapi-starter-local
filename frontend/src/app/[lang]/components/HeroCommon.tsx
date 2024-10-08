@@ -35,7 +35,7 @@ export default function HeroCommon({ data }: HeroCommonProps) {
   return (
     <>
       <section
-        className="container  dark:bg-black dark:text-gray-100 bg-no-repeat bg-cover overflow-hidden pb-60"
+        className="container  dark:bg-black dark:text-gray-100 bg-no-repeat bg-cover overflow-hidden pb-40"
         style={{
           backgroundImage: `url(${imageUrl || ""})`,
           backgroundPosition: "50% top",
@@ -46,7 +46,7 @@ export default function HeroCommon({ data }: HeroCommonProps) {
             <div className="text-hero mb-5">
               <h2 className="uppercase">{data.heading}</h2>
             </div>
-            <p className="text-32  leading-[77px]">{data.description}</p>
+            <p className="lg:text-32  lg:leading-[77px] sm:text-26 sm:leading-[30px]">{data.description}</p>
 
             <div className="mt-10">
               <div className="flex lg:justify-start justify-center">

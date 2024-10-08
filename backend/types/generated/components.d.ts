@@ -1,81 +1,5 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface SharedVideoEmbed extends Schema.Component {
-  collectionName: 'components_sections_video_embeds';
-  info: {
-    displayName: 'Video Embed';
-    description: '';
-  };
-  attributes: {
-    url: Attribute.String & Attribute.Required;
-  };
-}
-
-export interface SharedSlider extends Schema.Component {
-  collectionName: 'components_shared_sliders';
-  info: {
-    displayName: 'Slider';
-    icon: 'address-book';
-    description: '';
-  };
-  attributes: {
-    files: Attribute.Media<'images', true>;
-  };
-}
-
-export interface SharedSeo extends Schema.Component {
-  collectionName: 'components_shared_seos';
-  info: {
-    name: 'Seo';
-    icon: 'allergies';
-    displayName: 'Seo';
-    description: '';
-  };
-  attributes: {
-    metaTitle: Attribute.String & Attribute.Required;
-    metaDescription: Attribute.Text & Attribute.Required;
-    shareImage: Attribute.Media<'images'>;
-  };
-}
-
-export interface SharedRichText extends Schema.Component {
-  collectionName: 'components_shared_rich_texts';
-  info: {
-    displayName: 'Rich text';
-    icon: 'align-justify';
-    description: '';
-  };
-  attributes: {
-    body: Attribute.RichText;
-  };
-}
-
-export interface SharedQuote extends Schema.Component {
-  collectionName: 'components_shared_quotes';
-  info: {
-    displayName: 'Quote';
-    icon: 'indent';
-    description: '';
-  };
-  attributes: {
-    title: Attribute.String;
-    body: Attribute.Text & Attribute.Required;
-    author: Attribute.String;
-  };
-}
-
-export interface SharedMedia extends Schema.Component {
-  collectionName: 'components_shared_media';
-  info: {
-    displayName: 'Media';
-    icon: 'file-video';
-    description: '';
-  };
-  attributes: {
-    picture: Attribute.Media<'images'>;
-  };
-}
-
 export interface SectionsTestimonialsGroup extends Schema.Component {
   collectionName: 'components_slices_testimonials_groups';
   info: {
@@ -129,7 +53,7 @@ export interface SectionsRichText extends Schema.Component {
 export interface SectionsProjects extends Schema.Component {
   collectionName: 'components_sections_projects';
   info: {
-    displayName: 'Project';
+    displayName: 'Projects';
     description: '';
   };
   attributes: {
@@ -218,6 +142,19 @@ export interface SectionsHero extends Schema.Component {
     text: Attribute.String;
     buttons: Attribute.Component<'links.button-link', true>;
     title1: Attribute.String;
+  };
+}
+
+export interface SectionsHeroDetails extends Schema.Component {
+  collectionName: 'components_sections_hero_details';
+  info: {
+    displayName: 'Hero Details';
+    description: '';
+  };
+  attributes: {
+    heading: Attribute.String;
+    tags: Attribute.String;
+    picture: Attribute.Media<'images'>;
   };
 }
 
@@ -345,6 +282,92 @@ export interface SectionsBottomActions extends Schema.Component {
     title: Attribute.String;
     buttons: Attribute.Component<'links.button-link', true>;
     description: Attribute.Text;
+  };
+}
+
+export interface SharedVideo extends Schema.Component {
+  collectionName: 'components_shared_videos';
+  info: {
+    displayName: 'Video';
+  };
+  attributes: {
+    video: Attribute.Media<'videos', true>;
+  };
+}
+
+export interface SharedVideoEmbed extends Schema.Component {
+  collectionName: 'components_sections_video_embeds';
+  info: {
+    displayName: 'Video Embed';
+    description: '';
+  };
+  attributes: {
+    url: Attribute.String & Attribute.Required;
+  };
+}
+
+export interface SharedSlider extends Schema.Component {
+  collectionName: 'components_shared_sliders';
+  info: {
+    displayName: 'Slider';
+    icon: 'address-book';
+    description: '';
+  };
+  attributes: {
+    files: Attribute.Media<'images', true>;
+  };
+}
+
+export interface SharedSeo extends Schema.Component {
+  collectionName: 'components_shared_seos';
+  info: {
+    name: 'Seo';
+    icon: 'allergies';
+    displayName: 'Seo';
+    description: '';
+  };
+  attributes: {
+    metaTitle: Attribute.String & Attribute.Required;
+    metaDescription: Attribute.Text & Attribute.Required;
+    shareImage: Attribute.Media<'images'>;
+  };
+}
+
+export interface SharedRichText extends Schema.Component {
+  collectionName: 'components_shared_rich_texts';
+  info: {
+    displayName: 'Rich text';
+    icon: 'align-justify';
+    description: '';
+  };
+  attributes: {
+    body: Attribute.RichText;
+  };
+}
+
+export interface SharedQuote extends Schema.Component {
+  collectionName: 'components_shared_quotes';
+  info: {
+    displayName: 'Quote';
+    icon: 'indent';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    body: Attribute.Text & Attribute.Required;
+    author: Attribute.String;
+  };
+}
+
+export interface SharedMedia extends Schema.Component {
+  collectionName: 'components_shared_media';
+  info: {
+    displayName: 'Media';
+    icon: 'file-video';
+    description: '';
+  };
+  attributes: {
+    picture: Attribute.Media<'images'>;
   };
 }
 
@@ -631,12 +654,6 @@ export interface ElementsClientLogo extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'shared.video-embed': SharedVideoEmbed;
-      'shared.slider': SharedSlider;
-      'shared.seo': SharedSeo;
-      'shared.rich-text': SharedRichText;
-      'shared.quote': SharedQuote;
-      'shared.media': SharedMedia;
       'sections.testimonials-group': SectionsTestimonialsGroup;
       'sections.technology': SectionsTechnology;
       'sections.service': SectionsService;
@@ -648,6 +665,7 @@ declare module '@strapi/types' {
       'sections.large-video': SectionsLargeVideo;
       'sections.image-test': SectionsImageTest;
       'sections.hero': SectionsHero;
+      'sections.hero-details': SectionsHeroDetails;
       'sections.hero-common': SectionsHeroCommon;
       'sections.heading': SectionsHeading;
       'sections.features': SectionsFeatures;
@@ -658,6 +676,13 @@ declare module '@strapi/types' {
       'sections.contact': SectionsContact;
       'sections.client': SectionsClient;
       'sections.bottom-actions': SectionsBottomActions;
+      'shared.video': SharedVideo;
+      'shared.video-embed': SharedVideoEmbed;
+      'shared.slider': SharedSlider;
+      'shared.seo': SharedSeo;
+      'shared.rich-text': SharedRichText;
+      'shared.quote': SharedQuote;
+      'shared.media': SharedMedia;
       'meta.metadata': MetaMetadata;
       'links.social-link': LinksSocialLink;
       'links.link': LinksLink;

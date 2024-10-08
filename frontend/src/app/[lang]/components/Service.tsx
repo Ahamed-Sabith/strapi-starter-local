@@ -38,7 +38,7 @@ interface ServiceProps {
 
 export default function Service({ data }: ServiceProps) {
   return (
-    <div className="mb-24">
+    <div >
       <div className="grid grid-cols-1 md:grid-cols-3">
         {data.services.map((service, index) => (
           <div key={service.id} className="text-center">
@@ -61,7 +61,7 @@ export default function Service({ data }: ServiceProps) {
 
       {/* Button Section */}
 
-      <div className="mx-12 mt-32">
+      <div className="mx-12 my-32">
         <div className="flex lg:justify-start justify-center">
           <div className="primary-btn ">
             <Link

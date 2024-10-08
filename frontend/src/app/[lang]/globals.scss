@@ -163,13 +163,23 @@ body {
   .text-hero h1 {
     @apply text-[160px] font-bold leading-[222px];
   } 
+
+  .text-hero h2 {
+    @apply text-[160px] font-bold leading-[222px] 
+  }
 }
 @media (max-width: 768px) {
+  .text-hero h2 {
+    @apply text-[110px] font-bold leading-[110px] 
+  }
   .text-hero h1 {
     @apply text-[110px] font-bold leading-[110px];
   } 
 }
 @media (max-width: 680px) {
+  .text-hero h2 {
+    @apply text-[66px] font-bold leading-[75px] 
+  }
   .text-hero h1 {
     @apply text-[70px] font-bold leading-[75px];
   } 

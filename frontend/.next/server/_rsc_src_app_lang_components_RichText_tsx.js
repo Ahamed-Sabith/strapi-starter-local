@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "_rsc_src_app_lang_components_RichText_tsx";
+exports.ids = ["_rsc_src_app_lang_components_RichText_tsx"];
+exports.modules = {
+
+/***/ "(rsc)/./src/app/[lang]/components/RichText.tsx":
+/*!************************************************!*\
+  !*** ./src/app/[lang]/components/RichText.tsx ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ RichText)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-markdown */ \"(rsc)/./node_modules/react-markdown/lib/index.js\");\n/* harmony import */ var remark_gfm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! remark-gfm */ \"(rsc)/./node_modules/remark-gfm/lib/index.js\");\n/* harmony import */ var rehype_raw__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rehype-raw */ \"(rsc)/./node_modules/rehype-raw/lib/index.js\");\n\n\n\n\nfunction RichText({ data }) {\n    // TODO: STYLE THE MARKDOWN\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n        className: \"rich-text py-6 dark:bg-black dark:text-gray-50 \",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_markdown__WEBPACK_IMPORTED_MODULE_1__.Markdown, {\n            children: data.body,\n            remarkPlugins: [\n                remark_gfm__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n            ],\n            rehypePlugins: [\n                rehype_raw__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n            ]\n        }, void 0, false, {\n            fileName: \"C:\\\\Users\\\\Admin\\\\Documents\\\\GitHub\\\\strapi-starter-local\\\\frontend\\\\src\\\\app\\\\[lang]\\\\components\\\\RichText.tsx\",\n            lineNumber: 15,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\Admin\\\\Documents\\\\GitHub\\\\strapi-starter-local\\\\frontend\\\\src\\\\app\\\\[lang]\\\\components\\\\RichText.tsx\",\n        lineNumber: 14,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL1tsYW5nXS9jb21wb25lbnRzL1JpY2hUZXh0LnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQXNDO0FBQ0g7QUFDQTtBQVFwQixTQUFTRyxTQUFTLEVBQUVDLElBQUksRUFBaUI7SUFDdEQsMkJBQTJCO0lBQzNCLHFCQUNFLDhEQUFDQztRQUFRQyxXQUFVO2tCQUNqQiw0RUFBQ04sb0RBQVFBO1lBQUNPLFVBQVVILEtBQUtJLElBQUk7WUFBRUMsZUFBZTtnQkFBQ1Isa0RBQVNBO2FBQUM7WUFBR1MsZUFBZTtnQkFBQ1Isa0RBQVNBO2FBQUM7Ozs7Ozs7Ozs7O0FBRzVGIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZnJvbnRlbmQvLi9zcmMvYXBwL1tsYW5nXS9jb21wb25lbnRzL1JpY2hUZXh0LnRzeD9hNzVkIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBNYXJrZG93biBmcm9tIFwicmVhY3QtbWFya2Rvd25cIjtcclxuaW1wb3J0IHJlbWFya0dmbSBmcm9tIFwicmVtYXJrLWdmbVwiO1xyXG5pbXBvcnQgcmVoeXBlUmF3IGZyb20gXCJyZWh5cGUtcmF3XCI7XHJcblxyXG5pbnRlcmZhY2UgUmljaFRleHRQcm9wcyB7XHJcbiAgZGF0YToge1xyXG4gICAgYm9keTogc3RyaW5nO1xyXG4gIH07XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFJpY2hUZXh0KHsgZGF0YSB9OiBSaWNoVGV4dFByb3BzKSB7XHJcbiAgLy8gVE9ETzogU1RZTEUgVEhFIE1BUktET1dOXHJcbiAgcmV0dXJuIChcclxuICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInJpY2gtdGV4dCBweS02IGRhcms6YmctYmxhY2sgZGFyazp0ZXh0LWdyYXktNTAgXCI+XHJcbiAgICAgIDxNYXJrZG93biBjaGlsZHJlbj17ZGF0YS5ib2R5fSByZW1hcmtQbHVnaW5zPXtbcmVtYXJrR2ZtXX0gIHJlaHlwZVBsdWdpbnM9e1tyZWh5cGVSYXddfS8+XHJcbiAgICA8L3NlY3Rpb24+XHJcbiAgKTtcclxufVxyXG4iXSwibmFtZXMiOlsiTWFya2Rvd24iLCJyZW1hcmtHZm0iLCJyZWh5cGVSYXciLCJSaWNoVGV4dCIsImRhdGEiLCJzZWN0aW9uIiwiY2xhc3NOYW1lIiwiY2hpbGRyZW4iLCJib2R5IiwicmVtYXJrUGx1Z2lucyIsInJlaHlwZVBsdWdpbnMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./src/app/[lang]/components/RichText.tsx\n");
+
+/***/ })
+
+};
+;
