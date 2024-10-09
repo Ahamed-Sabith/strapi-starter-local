@@ -25,7 +25,6 @@ interface ProjectsProps {
 }
 
 export default function Projects({ data }: ProjectsProps) {
-  console.log(data, "hey");
   
   const [data1, setData1] = useState<any>([]);
   const [isLoading, setLoading] = useState(true);
@@ -44,7 +43,6 @@ export default function Projects({ data }: ProjectsProps) {
       };
       const options = { headers: { Authorization: `Bearer ${token}` } };
       const responseData = await fetchAPI(path, urlParamsObject, options);
-      console.log("responseData", responseData.data);
       setData1(responseData.data);
     } catch (error) {
       console.error(error);

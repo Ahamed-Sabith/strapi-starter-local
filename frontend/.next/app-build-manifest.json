@@ -16,27 +16,22 @@
       "static/chunks/main-app.js",
       "static/chunks/app/[lang]/loading.js"
     ],
-    "/[lang]/blog/layout": [
+    "/[lang]/portfolio/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[lang]/blog/layout.js"
-    ],
-    "/[lang]/blog/[category]/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/[lang]/blog/[category]/[slug]/page.css",
-      "static/chunks/app/[lang]/blog/[category]/[slug]/page.js"
-    ],
-    "/[lang]/blog/[category]/[slug]/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lang]/blog/[category]/[slug]/layout.js"
+      "static/chunks/app/[lang]/portfolio/[slug]/page.js"
     ],
     "/[lang]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/[lang]/page.css",
       "static/chunks/app/[lang]/page.js"
+    ],
+    "/[lang]/[...slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/[...slug]/page.css",
+      "static/chunks/app/[lang]/[...slug]/page.js"
     ]
   }
 }

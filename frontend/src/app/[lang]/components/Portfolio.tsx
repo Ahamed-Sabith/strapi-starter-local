@@ -61,7 +61,6 @@ export default function Portfolio() {
   }, [fetchData]);
 
   if (isLoading) return <Loader />;
-  console.log(data);
   
   return (
     <>
